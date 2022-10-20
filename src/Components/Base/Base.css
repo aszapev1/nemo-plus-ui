@@ -1,0 +1,321 @@
+/* Подключаем шрифты */
+@font-face {
+    font-family: 'Golos-Text';
+    src:
+        url("./fonts/Golos-Text_Regular.woff2") format("woff2"),
+        url("./fonts/Golos-Text_Regular.woff") format("woff"),
+        url("./fonts/Golos-Text_Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos-Text';
+    src:
+        url("./fonts/Golos-Text_Medium.woff2") format("woff2"),
+        url("./fonts/Golos-Text_Medium.woff") format("woff"),
+        url("./fonts/Golos-Text_Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos-Text';
+    src:
+        url("./fonts/Golos-Text_Bold.woff2") format("woff2"),
+        url("./fonts/Golos-Text_Bold.woff") format("woff"),
+        url("./fonts/Golos-Text_Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Определяем главную переменную */
+:root {
+    --font-family: 'Golos-Text', -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica, Arial, sans-serif;
+    --constants-gray-900: #000000;
+    --constants-gray-800: #101010;
+    --constants-gray-700: #1F1F1F;
+    --constants-gray-600: #3D3D3E;
+    --constants-gray-500: #797A7B;
+    --constants-gray-400: #B5B7B8;
+    --constants-gray-300: #D3D5D7;
+    --constants-gray-200: #E2E4E6;
+    --constants-gray-100: #F1F3F5;
+    --constants-gray-0: #FFFFFF;
+    --constants-blue-900: #014DD1;
+    --constants-blue-800: #0155E6;
+    --constants-blue-700: #015CFF;
+    --constants-blue-600: #2172FE;
+    --constants-blue-500: #4186FE;
+    --constants-blue-400: #619AFE;
+    --constants-blue-300: #80AEFE;
+    --constants-blue-200: #C0D7FF;
+    --constants-blue-100: #D0E1FF;
+    --constants-blue-0: #E0EBFF;
+    --constants-red-900: #802011;
+    --constants-red-800: #C0301A;
+    --constants-red-700: #FF4022;
+    --constants-red-600: #FF583E;
+    --constants-red-500: #FF705A;
+    --constants-red-400: #FF8876;
+    --constants-red-300: #FFA091;
+    --constants-red-200: #FFB8AD;
+    --constants-red-100: #FFD0C8;
+    --constants-red-0: #FFE8E4;
+    --constants-orange-900: #E39101;
+    --constants-orange-800: #EF9801;
+    --constants-orange-700: #FA9F01;
+    --constants-orange-600: #FBAB21;
+    --constants-orange-500: #FCB741;
+    --constants-orange-400: #FDC361;
+    --constants-orange-300: #FDCF80;
+    --constants-orange-200: #FEDBA0;
+    --constants-orange-100: #FEE7C0;
+    --constants-orange-0: #FEE9C6;
+    --constants-yello-900: #D0B519;
+    --constants-yello-800: #E5C71B;
+    --constants-yello-700: #FCDB1E;
+    --constants-yello-600: #FDE03B;
+    --constants-yello-500: #FDE457;
+    --constants-yello-400: #FEE973;
+    --constants-yello-300: #FEED8F;
+    --constants-yello-200: #FFF2AB;
+    --constants-yello-100: #FFF6C7;
+    --constants-yello-0: #FFFBE3;
+    --constants-lime-900: #44B901;
+    --constants-lime-800: #4BCC01;
+    --constants-lime-700: #52E001;
+    --constants-lime-600: #7DE740;
+    --constants-lime-500: #92EB60;
+    --constants-lime-400: #A7EE7F;
+    --constants-lime-300: #BDF29F;
+    --constants-lime-200: #D2F5BE;
+    --constants-lime-100: #E7F9DD;
+    --constants-lime-0: #F2FBED;
+    --constants-teal-900: #01CB81;
+    --constants-teal-800: #01DF8E;
+    --constants-teal-700: #21E39D;
+    --constants-teal-600: #41E7AB;
+    --constants-teal-500: #61EBB9;
+    --constants-teal-400: #80EFC7;
+    --constants-teal-300: #A0F3D5;
+    --constants-teal-200: #C0F7E3;
+    --constants-teal-100: #E0FBF1;
+    --constants-teal-0: #F0FDF8;
+    --constants-cyan-900: #01A1BA;
+    --constants-cyan-800: #01B1CD;
+    --constants-cyan-700: #01C3E1;
+    --constants-cyan-600: #01D6F7;
+    --constants-cyan-500: #41E1F9;
+    --constants-cyan-400: #80EBFB;
+    --constants-cyan-300: #A0F0FC;
+    --constants-cyan-200: #C0F5FD;
+    --constants-cyan-100: #E0FAFE;
+    --constants-cyan-0: #F0FDFF;
+    --constants-indigo-900: #7060D3;
+    --constants-indigo-800: #7B6AE8;
+    --constants-indigo-700: #8775FF;
+    --constants-indigo-600: #9687FF;
+    --constants-indigo-500: #A598FF;
+    --constants-indigo-400: #C3BAFF;
+    --constants-indigo-300: #D2CCFF;
+    --constants-indigo-200: #E1DDFF;
+    --constants-indigo-100: #E9E6FF;
+    --constants-indigo-0: #F0EEFF;
+    --constants-violet-900: #9F46D3;
+    --constants-violet-800: #AF4DE8;
+    --constants-violet-700: #C155FF;
+    --constants-violet-600: #D180FF;
+    --constants-violet-500: #E0AAFF;
+    --constants-violet-400: #E8C0FF;
+    --constants-violet-300: #F0D5FF;
+    --constants-violet-200: #F4E0FF;
+    --constants-violet-100: #F8EAFF;
+    --constants-violet-0: #FCF5FF;
+    --constants-fuschia-900: #D34DC1;
+    --constants-fuschia-800: #E855D4;
+    --constants-fuschia-700: #FF5DE9;
+    --constants-fuschia-600: #FF72EC;
+    --constants-fuschia-500: #FF86EF;
+    --constants-fuschia-400: #FF9AF2;
+    --constants-fuschia-300: #FFAEF4;
+    --constants-fuschia-200: #FFC3F7;
+    --constants-fuschia-100: #FFD7FA;
+    --constants-fuschia-0: #FFEBFD;
+    --constants-pink-900: #D32968;
+    --constants-pink-800: #E82D72;
+    --constants-pink-700: #FF327D;
+    --constants-pink-600: #FF669E;
+    --constants-pink-500: #FF80AE;
+    --constants-pink-400: #FF99BE;
+    --constants-pink-300: #FFB3CF;
+    --constants-pink-200: #FFCCDF;
+    --constants-pink-100: #FFE6EF;
+    --constants-pink-0: #FFF3F7;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+
+.font {
+    font-family: var(--font-family);
+    font-style: normal;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.promo1 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.promo2 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.promo3 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.promo-4 {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.header1 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.header2 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.header3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header5 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header6 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text1 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.text2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.text3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.text4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* Выравнивание текста */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
+}
+
+/* Преобразование текста */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.normal-case {
+    text-transform: none;
+}
+
+/* Переполнение текста */
+
+/* Используйте truncate, чтобы обрезать выходящий за пределы текст многоточием ( …), если это необходимо. */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Используйте text-ellipsis, чтобы обрезать выходящий за пределы текст многоточием ( …), если это необходимо. */
+.text-ellipsis {
+    text-overflow: ellipsis;
+}
+
+/* Используйте text-clip, чтобы обрезать текст на границе области содержимого. */
+.text-clip {
+    text-overflow: clip;
+}
+
+/* Разрыв слов */
+.break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+.break-words {
+    overflow-wrap: break-word;
+}
+
+.break-all {
+    word-break: break-all;
+}

@@ -1,8 +1,21 @@
 {
   "name": "nemo-ui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "description": "Nemo Plus UI components React JS",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "author": "Nemo Plus",
+  "license": "MIT",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "moment": "^2.29.4",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,10 +25,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build": "rimraf dist && babel src/components --out-dir dist --copy-files",
+    "prepare": "npm run build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build-react": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
