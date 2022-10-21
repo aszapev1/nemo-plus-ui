@@ -1,0 +1,61 @@
+/* Сбросим стандартные стили браузера */
+button {
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    background: none;
+}
+
+.nemo-button {
+    padding: 10px 24px;
+    border-radius: 8px;
+    background: var(--constants-blue-700);
+    color: var(--constants-gray-0);
+    transition: background .3s ease;
+    max-width: fit-content;
+}
+
+.nemo-button--loading.nemo-button {
+    pointer-events: none;
+}
+
+.nemo-button_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nemo-button_container {
+    display: flex;
+    gap: 8px;
+    position: relative;
+}
+
+.nemo-button:hover {
+    background: var(--constants-blue-800);
+    cursor: pointer;
+}
+
+.nemo-button:focus {
+    outline: 0;
+}
+
+.nemo-button:focus-visible {
+    background: var(--constants-blue-800);
+    outline-offset: 4px;
+    outline: 2px solid var(--constants-pink-700);
+}
+
+.nemo-button:active {
+    background: var(--constants-blue-900);
+}
+
+.nemo-button:disabled {
+    cursor: no-drop;
+    background: var(--constants-gray-300);
+}
+
+.nemo-button--loading .nemo-button-container {
+    opacity: 0;
+}

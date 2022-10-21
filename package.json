@@ -13,7 +13,8 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "moment": "^2.29.4",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^6.4.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
