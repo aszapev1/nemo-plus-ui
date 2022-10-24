@@ -1,0 +1,28 @@
+{
+    "ignore": [
+      "node_modules",
+      "src/App.css",
+      "src/index.js",
+      "src/index.css",
+      "src/reportWebVitals.js",
+      "src/pages",
+      "public"
+    ],
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react"
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-proposal-class-properties",
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  }
+  
