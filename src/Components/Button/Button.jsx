@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.css';
 import Loader from '../Loader/Loader';
+import './Button.css';
+
 const Button = React.forwardRef(
 	(
 		{
@@ -41,7 +42,7 @@ const Button = React.forwardRef(
 				type={type}
 				ref={ref}
 				autoFocus={autoFocus}
-				disabled={disabled}
+				disabled={disabled || loading}
 				name={name}
 				onClick={onClick || null}
 				onFocus={onFocus || null}
@@ -51,9 +52,7 @@ const Button = React.forwardRef(
 						<Loader
 							className='nemo-button_loader'
 							size={size === 32 ? 16 : 24}
-							variant={
-								variant === 'primary' ? 'white' : 'default'
-							}
+							variant={variant === 'primary' ? 'white' : 'black'}
 						/>
 					)}
 					<div className='nemo-button-container'>
@@ -72,14 +71,24 @@ Button.propTypes = {
 	className: PropTypes.string,
 	disabled: PropTypes.bool,
 	autoFocus: PropTypes.bool,
+	loading: PropTypes.bool,
 	name: PropTypes.string,
 	onClick: PropTypes.func,
 	onFocus: PropTypes.func,
 	onBlur: PropTypes.func,
 	children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 		.isRequired,
-	size: PropTypes.oneOf([24, 32, 44, 52]).isRequired,
+	size: PropTypes.oneOf([32, 44, 52, 72]).isRequired,
 	variant: PropTypes.oneOf(['primary', 'secondary', 'outline', 'ghost'])
 		.isRequired,
+};
+
+Button.defaultProps = {
+	size: 44,
+	variant: 'primary',
+	type: 'button',
+	disabled: false,
+	autoFocus: false,
+	loading: false,
 };
 export default Button;

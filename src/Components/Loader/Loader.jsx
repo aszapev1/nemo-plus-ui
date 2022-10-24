@@ -24,7 +24,7 @@ const Loader = ({ className, size, variant }) => {
 Loader.propTypes = {
 	className: PropTypes.string,
 	size: PropTypes.oneOf([16, 24, 40]).isRequired,
-	variant: PropTypes.oneOf(['default', 'white']).isRequired,
+	variant: PropTypes.oneOf(['default', 'white', 'black']).isRequired,
 };
 
 Loader.defaultProps = {

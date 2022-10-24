@@ -1,0 +1,61 @@
+.nemo-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.nemo-counter.nemo-counter--16 {
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.nemo-counter.nemo-counter--16.nemo-counter--round {
+    width: 16px;
+}
+
+.nemo-counter.nemo-counter--16.nemo-counter--oval {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.nemo-counter.nemo-counter--20 {
+    height: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.nemo-counter.nemo-counter--20.nemo-counter--round {
+    width: 20px;
+}
+
+.nemo-counter.nemo-counter--20.nemo-counter--oval {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.nemo-counter.nemo-counter--24 {
+    height: 24px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.nemo-counter.nemo-counter--24.nemo-counter--round {
+    width: 24px;
+}
+
+.nemo-counter.nemo-counter--24.nemo-counter--oval {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nemo-counter.nemo-counter--primary {
+    background: var(--constants-blue-700);
+    color: #FFFFFF;
+}
+
+.nemo-counter.nemo-counter--secondary {
+    background: #F1F3F5;
+    color: #000000;
+}

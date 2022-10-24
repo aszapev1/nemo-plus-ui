@@ -40,6 +40,10 @@
     background: var(--constants-gray-0);
 }
 
+.nemo-loader--black .nemo-loader_trait {
+    background: var(--constants-gray-900);
+}
+
 .nemo-loader--16 .nemo-loader_trait {
     border-radius: 2px;
     width: 2px;
