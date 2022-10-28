@@ -10,6 +10,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c",
+    "prepare": "npm run rollup",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
