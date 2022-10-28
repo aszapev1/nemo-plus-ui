@@ -1,0 +1,187 @@
+.nemo-button {
+  margin: 0;
+  border: 2px;
+  border-style: solid;
+  padding: 0px 24px;
+  border-radius: 8px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nemo-button--32 {
+  padding: 0px 16px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.nemo-button--44 {
+  padding: 0px 24px;
+  height: 44px;
+}
+
+.nemo-button--52 {
+  padding: 0px 32px;
+  height: 52px;
+}
+
+.nemo-button--72 {
+  padding: 0px 40px;
+  height: 72px;
+  border-radius: 12px;
+}
+
+.nemo-button--primary {
+  background: var(--constants-blue-700);
+  color: var(--constants-gray-0);
+  border-color: var(--constants-blue-700);
+}
+
+.nemo-button--secondary {
+  background: var(--constants-gray-100);
+  color: var(--constants-gray-900);
+  border-color: var(--constants-gray-100);
+}
+
+.nemo-button--outline {
+  background: none;
+  color: var(--constants-gray-900);
+  border-color: var(--constants-gray-200);
+}
+
+.nemo-button--ghost {
+  background: none;
+  color: var(--constants-gray-900);
+  border-color: var(--constants-gray-0);
+}
+
+.nemo-button_loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nemo-button_container {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+
+.nemo-button:hover {
+  cursor: pointer;
+}
+
+.nemo-button--primary:hover {
+  background: var(--constants-blue-800);
+  border-color: var(--constants-blue-800);
+}
+
+.nemo-button--secondary:hover {
+  background: var(--constants-gray-200);
+  border-color: var(--constants-gray-200);
+}
+
+.nemo-button--outline:hover {
+  background: var(--constants-gray-200);
+  border-color: var(--constants-gray-200);
+}
+
+.nemo-button--ghost:hover {
+  background: var(--constants-gray-200);
+  border-color: var(--constants-gray-200);
+}
+
+.nemo-button:focus {
+  outline: 0;
+}
+
+.nemo-button:focus-visible {
+  outline-offset: 4px;
+  outline: 2px solid var(--constants-pink-700);
+}
+
+.nemo-button--primary:focus-visible {
+  background: var(--constants-blue-900);
+  border-color: var(--constants-blue-900);
+}
+
+.nemo-button--secondary:focus-visible {
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+}
+
+.nemo-button--outline:focus-visible {
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+}
+
+.nemo-button--ghost:focus-visible {
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+}
+
+.nemo-button:active {
+  background: var(--constants-blue-900);
+}
+
+.nemo-button--primary:active {
+  background: var(--constants-blue-900);
+  border-color: var(--constants-blue-900);
+}
+
+.nemo-button--secondary:active {
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+}
+
+.nemo-button--outline:active {
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+}
+
+.nemo-button--ghost:active {
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+}
+
+.nemo-button:disabled {
+  cursor: no-drop;
+  background: var(--constants-gray-300);
+  border-color: var(--constants-gray-300);
+  color: var(--constants-gray-500);
+}
+
+.nemo-button--primary.nemo-button--loading.nemo-button:disabled  {
+  cursor: no-drop;
+  background: var(--constants-blue-700);
+  color: var(--constants-gray-0);
+  border-color: var(--constants-blue-700);
+}
+
+.nemo-button--secondary.nemo-button--loading.nemo-button:disabled  {
+  cursor: no-drop;
+  background: var(--constants-gray-100);
+  color: var(--constants-gray-900);
+  border-color: var(--constants-gray-100);
+}
+
+.nemo-button--outline.nemo-button--loading.nemo-button:disabled  {
+  cursor: no-drop;
+  background: none;
+  color: var(--constants-gray-900);
+  border-color: var(--constants-gray-200);
+}
+
+.nemo-button--ghost.nemo-button--loading.nemo-button:disabled  {
+  cursor: no-drop;
+  background: none;
+  color: var(--constants-gray-900);
+  border-color: var(--constants-gray-0);
+}
+
+.nemo-button--loading .nemo-button-container {
+  opacity: 0;
+}
