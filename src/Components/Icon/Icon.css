@@ -1,0 +1,21 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nemo-icon_transform--up {
+    transform: rotate(0deg);
+}
+
+.nemo-icon_transform--right {
+    transform: rotate(90deg);
+}
+
+.nemo-icon_transform--down {
+    transform: rotate(180deg);
+}
+
+.nemo-icon_transform--left {
+    transform: rotate(270deg);
+}
