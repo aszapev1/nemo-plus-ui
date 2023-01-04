@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../Icon';
 import './Badge.css';
 export interface BadgeProps {
 	className?: string;
@@ -13,24 +14,61 @@ export interface BadgeProps {
 		| 'light'
 		| 'dark';
 	children: string | number;
+	iconLeft?: string;
+	iconLeftTurn: 'up' | 'right' | 'down' | 'left';
+	iconRightTurn: 'up' | 'right' | 'down' | 'left';
+	iconRight?: string;
 }
 const Badge = (props: BadgeProps) => {
+	const {
+		className,
+		size,
+		variant,
+		iconLeft,
+		iconLeftTurn,
+		iconRight,
+		iconRightTurn,
+	} = props;
 	const css = ['nemo-badge'];
-	if (props.className) {
-		css.push(props.className);
+	if (className) {
+		css.push(className);
 	}
-	if (props.size) {
-		css.push(`nemo-badge--${props.size}`);
+	if (size) {
+		css.push(`nemo-badge--${size}`);
 	}
-	if (props.variant) {
-		css.push(`nemo-badge--${props.variant}`);
+	if (variant) {
+		css.push(`nemo-badge--${variant}`);
 	}
 	return (
 		<div className={css.join(' ')}>
 			<span className='font font-medium nemo-badge-children'>
+				{iconLeft && (
+					<Icon
+						height={size - 8}
+						width={size - 8}
+						turn={iconLeftTurn}
+						variant={iconLeft}
+					/>
+				)}
 				{props.children}
+				{iconRight && (
+					<Icon
+						height={size - 8}
+						width={size - 8}
+						turn={iconRightTurn}
+						variant={iconRight}
+					/>
+				)}
 			</span>
 		</div>
 	);
+};
+
+Badge.defaultProps = {
+	size: 24,
+	variant: 'primary',
+	children: 'badge',
+	iconLeftTurn: 'left',
+	iconRightTurn: 'right',
 };
 export default Badge;

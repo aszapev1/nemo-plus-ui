@@ -24,6 +24,8 @@ const Breadcrumb = (props: BreadcrumbProps) => {
 					return React.cloneElement(child, {
 						size: size,
 						variant: variant,
+						iconRight: 'arrow',
+						iconRightTurn: 'right',
 					});
 				}
 			})}

@@ -5,6 +5,13 @@
     width: max-content;
 }
 
+.nemo-badge-children {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
 .nemo-badge--24 {
     padding: 0px 12px;
     font-size: 14px;
@@ -31,10 +38,17 @@
     color: #FFFFFF;
 }
 
+.nemo-badge--primary .fill {
+    fill: #FFFFFF;
+}
+
 .nemo-badge--secondary {
     background: rgba(242, 243, 247, 0.75);
     color: #000000;
+}
 
+.nemo-badge--secondary .fill {
+    fill: #000000;
 }
 
 .nemo-badge--success {
@@ -42,9 +56,17 @@
     color: #FFFFFF;
 }
 
+.nemo-badge--success .fill {
+    fill: #FFFFFF;
+}
+
 .nemo-badge--negative {
     background: #FF4022;
     color: #FFFFFF;
+}
+
+.nemo-badge--negative .fill {
+    fill: #FFFFFF;
 }
 
 .nemo-badge--warning {
@@ -52,9 +74,17 @@
     color: #000000;
 }
 
+.nemo-badge--warning .fill {
+    fill: #000000;
+}
+
 .nemo-badge--info {
     background: #01D6F7;
     color: #FFFFFF;
+}
+
+.nemo-badge--info .fill {
+    fill: #FFFFFF;
 }
 
 .nemo-badge--light {
@@ -62,7 +92,15 @@
     color: #000000;
 }
 
+.nemo-badge--light .fill {
+    fill: #000000;
+}
+
 .nemo-badge--dark {
     background: #101010;
     color: #FFFFFF;
+}
+
+.nemo-badge--dark .fill {
+    fill: #FFFFFF;
 }
