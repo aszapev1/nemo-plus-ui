@@ -3,7 +3,7 @@ import './Divider.css';
 
 export interface DividerProps {
 	className?: string;
-	margin: boolean;
+	margin?: boolean;
 }
 
 const Divider = (props: DividerProps) => {
