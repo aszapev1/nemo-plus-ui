@@ -1,0 +1,16 @@
+.nemo-popup_item {
+    text-align: start;
+    background: none;
+    border: 0;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.nemo-popup_item:hover {
+    background-color: var(--background-secondary);
+}
+
+.nemo-popup_item:focus {
+    outline: none;
+    background-color: var(--background-secondary);
+}

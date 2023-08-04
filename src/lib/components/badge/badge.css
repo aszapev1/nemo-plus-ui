@@ -1,0 +1,97 @@
+.nemo-badge {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    width: max-content;
+}
+
+.nemo-badge-children {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+.nemo-badge--24 {
+    padding: 0px 12px;
+    font-size: 14px;
+    line-height: 18px;
+    height: 24px;
+}
+
+.nemo-badge--32 {
+    padding: 0px 12px;
+    font-size: 16px;
+    line-height: 20px;
+    height: 32px;
+}
+
+.nemo-badge--44 {
+    padding: 0px 24px;
+    font-size: 20px;
+    line-height: 24px;
+    height: 44px;
+}
+
+.nemo-badge--primary {
+    background: var(--brand);
+    color: var(--constants-greyscale-0);
+}
+
+.nemo-badge--primary svg path {
+    fill: var(--constants-greyscale-0);
+}
+
+.nemo-badge--secondary {
+    background: var(--background-secondary);
+    color: var(--text-primary);
+}
+
+.nemo-badge--secondary svg path {
+    fill: #000000;
+}
+
+.nemo-badge--success {
+    background: var(--accent-positive);
+    color: var(--constants-greyscale-0);
+}
+
+.nemo-badge--success svg path {
+    fill: #FFFFFF;
+}
+
+.nemo-badge--negative {
+    background: var(--accent-negative);
+    color: var(--constants-greyscale-0);
+}
+
+.nemo-badge--negative svg path {
+    fill: #FFFFFF;
+}
+
+.nemo-badge--warning {
+    background: var(--accent-warning);
+    color: var(--text-primary);
+}
+
+.nemo-badge--warning svg path {
+    fill: #000000;
+}
+
+.nemo-badge--light {
+    background: var(--background-primary);
+    color: var(--text-primary);
+}
+
+.nemo-badge--light svg path {
+    fill: #000000;
+}
+
+.nemo-badge--dark {
+    background: var(--background-inverted);
+    color: var(--text-inverted);
+}
+
+.nemo-badge--dark svg path {
+    fill: #FFFFFF;
+}

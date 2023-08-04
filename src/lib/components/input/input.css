@@ -1,0 +1,77 @@
+.nemo-input {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    min-width: 100px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-width: 1px;
+    border-color: var(--background-stroke);
+    border-style: solid;
+    background-color: var(--background-primary-elevated);
+    outline: none;
+    box-sizing: border-box;
+    color: var(--text-primary);
+}
+
+.nemo-input_size_32 {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+    height: 32px;
+}
+
+.nemo-input_size_44 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    height: 44px;
+}
+
+.nemo-input_size_52 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 8px;
+    height: 52px;
+}
+
+.nemo-input_size_72 {
+    padding-top: 34px;
+    padding-bottom: 14px;
+    border-radius: 10px;
+    height: 72px;
+}
+
+.nemo-input_size_72::placeholder {
+    opacity: 0;
+}
+
+.nemo-input_size_72:focus::placeholder {
+    opacity: 1;
+}
+
+.nemo-input:hover {
+    border-color: var(--accent-active);
+}
+
+.nemo-input:focus {
+    border-color: var(--accent-active);
+}
+
+.nemo-input::placeholder {
+    color: var(--text-secondary);
+}
+
+.nemo-input:focus::placeholder {
+    color: var(--text-tertiary);
+}
+
+.nemo-input:disabled {
+    background-color: var(--background-disabled);
+    border-color: var(--background-stroke-disabled);
+}

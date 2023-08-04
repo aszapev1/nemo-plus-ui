@@ -1,0 +1,60 @@
+.nemo-pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.nemo-pagination_item {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--constants-greyscale-100);
+    border: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.pagination-item_dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.nemo-pagination_item:hover {
+    cursor: pointer;
+    background: var(--constants-greyscale-100);
+}
+
+.nemo-pagination_item.active {
+    cursor: default;
+    pointer-events: none;
+    background: var(--accent-active);
+    color: var(--constants-greyscale-0);
+}
+
+
+
+.nemo-pagination_item--32 {
+    border-radius: 8px;
+    min-width: 32px;
+    min-height: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.nemo-pagination_item--44 {
+    border-radius: 12px;
+    min-width: 44px;
+    min-height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

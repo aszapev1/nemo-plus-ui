@@ -1,0 +1,12 @@
+.nemo-divider hr {
+    border-color: var(--background-stroke);
+    border-style: solid;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    border-bottom: 0px;
+}
+
+.nemo-divider--margine-stroke{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}

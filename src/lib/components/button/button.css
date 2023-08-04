@@ -1,0 +1,78 @@
+.nemo-button {
+    position: relative;
+    background-color: unset;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    cursor: pointer;
+}
+
+.nemo-button_size_24 {
+    height: 24px;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.nemo-button_size_32 {
+    min-width: 32px;
+    height: 32px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.nemo-button_size_44 {
+    height: 44px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.nemo-button_size_52 {
+    height: 52px;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+.nemo-button_size_72 {
+    height: 72px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nemo-button_variant_primary {
+    background-color: var(--control-primary);
+    color: var(--constants-greyscale-0);
+}
+
+.nemo-button_variant_primary svg path {
+    fill: var(--constants-greyscale-0);
+}
+
+.nemo-button_variant_primary:hover {
+    background-color: var(--constant_normal-blackberry);
+}
+
+.nemo-button__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nemo-button_loading {
+    pointer-events: none;
+}
+
+.nemo-button_loading .nemo-button__content {
+    opacity: 0;
+}
+
+.nemo-button:disabled {
+    color: var(--constants-greyscale-400);
+    background-color: var(--background-disabled);
+    cursor: no-drop;
+    border: none;
+    transform: none;
+}

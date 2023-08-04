@@ -1,0 +1,25 @@
+.wrapper {
+    gap: 24px;
+}
+
+.colors {
+    margin-bottom: 44px;
+}
+
+.row {
+    flex: 33.33%;
+    padding: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--background-stroke);
+    & div {
+        width: 33.3334%;
+    }
+}
+
+.color {
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    border: 1px solid var(--background-stroke);
+}

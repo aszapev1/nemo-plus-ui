@@ -1,0 +1,11 @@
+.nemo-box {
+    display: flex;
+}
+
+.nemo-box_variant_column {
+    flex-direction: column;
+}
+
+.nemo-box_variant_row {
+    flex-direction: row;
+}

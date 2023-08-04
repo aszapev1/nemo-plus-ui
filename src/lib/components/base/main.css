@@ -1,0 +1,261 @@
+body {
+    font-family: var(--font-family);
+}
+
+/* Подключаем шрифты */
+
+@font-face {
+    font-family: 'Golos-Text';
+    src: url("./fonts/Golos-Text_Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos-Text';
+    src: url("./fonts/Golos-Text_Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos-Text';
+    src: url("./fonts/Golos-Text_DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos-Text';
+    src: url("./fonts/Golos-Text_Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos-Text';
+    src: url("./fonts/Golos-Text_Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+/* Определяем главную переменную */
+:root {
+    --font-family: 'Golos-Text', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    --constants-greyscale-900: #000000;
+    --constants-greyscale-800: #1D2023;
+    --constants-greyscale-700: #2C3135;
+    --constants-greyscale-600: #434A51;
+    --constants-greyscale-500: #626C77;
+    --constants-greyscale-400: #969FA8;
+    --constants-greyscale-300: #BBC1C7;
+    --constants-greyscale-200: #E2E5EB;
+    --constants-greyscale-100: #F2F3F7;
+    --constants-greyscale-0: #FFFFFF;
+    --constant_darkest-blackberry: #002094;
+    --constant_dark-blackberry: #003db7;
+    --constant_normal-blackberry: #014fce;
+    --constant_light-blackberry: #6384e0;
+    --constant_lightest-blackberry: #e7eafa;
+    --constant_darkest-blueberry: #0048aa;
+    --constant_dark-blueberry: #007cff;
+    --constant_normal-blueberry: #0097fd;
+    --constant_light-blueberry: #45b6fc;
+    --constant_lightest-blueberry: #e1f3fe;
+    --constant_darkest-mint: #00724d;
+    --constant_dark-mint: #03a17b;
+    --constant_normal-mint: #00c19b;
+    --constant_light-mint: #00d9bc;
+    --constant_lightest-mint: #dff9f5;
+    --constant_darkest-apple: #027722;
+    --constant_dark-apple: #04aa42;
+    --constant_normal-apple: #26cd58;
+    --constant_light-apple: #74df8b;
+    --constant_lightest-apple: #e8faeb;
+    --constant_darkest-lime: #808201;
+    --constant_dark-lime: #a6c100;
+    --constant_normal-lime: #c1eb1d;
+    --constant_light-lime: #d3f36b;
+    --constant_lightest-lime: #f8fee7;
+    --constant_darkest-banana: #f37f19;
+    --constant_dark-banana: #fac031;
+    --constant_normal-banana: #fbe739;
+    --constant_light-banana: #fdf177;
+    --constant_lightest-banana: #fffde8;
+    --constant_darkest-orange: #ba360a;
+    --constant_dark-orange: #e04a17;
+    --constant_normal-orange: #f95721;
+    --constant_light-orange: #ffa080;
+    --constant_lightest-orange: #fbe9e7;
+    --constant_darkest-raspberry: #8e003f;
+    --constant_dark-raspberry: #c51345;
+    --constant_normal-raspberry: #ea1f49;
+    --constant_light-raspberry: #f55f7e;
+    --constant_lightest-raspberry: #ffe4e9;
+    --constant_darkest-cranberry: #7f3363;
+    --constant_dark-cranberry: #bb4079;
+    --constant_normal-cranberry: #e54887;
+    --constant_light-cranberry: #e677ad;
+    --constant_lightest-cranberry: #f9e7f0;
+    --constant_darkest-plum: #471c61;
+    --constant_dark-plum: #6d2d79;
+    --constant_normal-plum: #883888;
+    --constant_light-plum: #a86ea7;
+    --constant-lightest-plum: #f0e7f0;
+}
+
+:root[theme="light"] {
+    --text-primary: #000000;
+    --text-secondary: #5F6A76;
+    --text-tertiary: #9BA4AE;
+    --text-inverted: #FFFFFF;
+    --text-positive: #0EA93A;
+    --text-negative: #E74311;
+    --text-primary-link: #015CFF;
+    --text-visited-link: #893189;
+    --text-primary-link-inverted: #50BAFC;
+    --text-secondary-link: #5F6A76;
+    --background-primary: #FFFFFF;
+    --background-primary-elevated: #FFFFFF;
+    --background-modal: #FFFFFF;
+    --background-stroke: rgba(185, 193, 209, 0.50);
+    --background-secondary: #F4F5F8;
+    --background-secondary-elevated: #FFFFFF;
+    --background-overlay: rgba(28, 31, 34, 0.40);
+    --background-inverted: #1C1F22;
+    --background-bar: rgba(255, 255, 255, 0.88);
+    --background-disabled: rgba(127, 140, 153, 0.35);
+    --background-stroke-disabled: rgba(188, 195, 208, 0.25);
+    --background-lower: #F2F3F7;
+    --icon-primary: #000000;
+    --icon-secondary: #969FA8;
+    --icon-tertiary: #BBC1C7;
+    --control-primary: #015CFF;
+    --control-secondary: #1D2023;
+    --control-tertiary: #F2F3F7;
+    --control-alternative: #FFFFFF;
+    --control-active-tabbar: #015CFF;
+    --control-inactive-tabbar: #8F959C;
+    --accent-active: #015CFF;
+    --accent-positive: #26CD58;
+    --accent-warning: #FAC031;
+    --accent-negative: #F95721;
+    --brand: #015CFF
+}
+
+:root[theme="dark"] {
+    --text-primary: #FFFFFF;
+    --text-secondary: #99A2AB;
+    --text-tertiary: #656E7A;
+    --text-inverted: #1D1F22;
+    --text-positive: #62D57B;
+    --text-negative: #FD9F80;
+    --text-primary-link: #50BAFC;
+    --text-visited-link: #B56CB5;
+    --text-primary-link-inverted: #015CFF;
+    --text-secondary-link: #656E7A;
+    --background-primary: #000000;
+    --background-primary-elevated: #1D2023;
+    --background-modal: #2C3135;
+    --background-stroke: rgba(127, 140, 153, 0.35);
+    --background-secondary: rgba(98, 108, 119, 0.25);
+    --background-secondary-elevated: rgba(98, 108, 119, 0.25);
+    --background-overlay: rgba(29, 32, 35, 0.90);
+    --background-inverted: #FFFFFF;
+    --background-bar: rgba(0, 0, 0, 0.70);
+    --background-disabled: rgba(98, 108, 119, 0.15);
+    --background-stroke-disabled: rgba(127, 140, 153, 0.10);
+    --background-lower: #000000;
+    --icon-primary: #FFFFFF;
+    --icon-secondary: #969FA8;
+    --icon-tertiary: #626C77;
+    --control-primary: #015CFF;
+    --control-secondary: #FFFFFF;
+    --control-tertiary: rgba(127, 140, 153, 0.35);
+    --control-alternative: rgba(127, 140, 153, 0.35);
+    --control-active-tabbar: #FFFFFF;
+    --control-inactive-tabbar: rgba(255, 255, 255, 0.45);
+    --accent-active: #45B6FC;
+    --accent-positive: #74DF8B;
+    --accent-warning: #FAD67D;
+    --accent-negative: #FA8A64;
+    --brand: #015CFF;
+}
+
+/* LAYOTS */
+
+.container {
+    width: 1920px;
+    padding-left: 184px;
+    padding-right: 184px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media(min-width: 1680px)and (max-width: 1919px) {
+    .container {
+        width: 1680px;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+@media(min-width: 1440px)and (max-width: 1679px) {
+    .container {
+        width: 1440px;
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+}
+
+@media(min-width: 1280px)and (max-width: 1439px) {
+    .container {
+        width: 1280px;
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+}
+
+@media(min-width: 960px)and (max-width: 1279px) {
+    .container {
+        width: 960px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media(min-width: 768px)and (max-width: 959px) {
+    .container {
+        width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media(min-width: 576px)and (max-width: 767px) {
+    .container {
+        width: 576px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(min-width: 360px)and (max-width: 575px) {
+    .container {
+        width: 360px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 359px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

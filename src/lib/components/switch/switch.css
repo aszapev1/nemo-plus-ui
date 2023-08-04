@@ -1,0 +1,74 @@
+.nemo-switch {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nemo-switch_input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.nemo-switch_body {
+    background: var(--background-disabled);
+    display: block;
+    position: relative;
+    border-radius: 100px;
+}
+
+.nemo-switch_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: var(--constants-greyscale-0);
+    border-radius: 100px;
+    box-shadow: var(--shadows-low);
+    transition: all .3s ease 0s;
+}
+
+.nemo-switch_size_24 .nemo-switch_body {
+    width: 44px;
+    height: 24px;
+}
+
+.nemo-switch_size_24 .nemo-switch_round {
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+}
+
+.nemo-switch_size_24 input:checked+.nemo-switch_body .nemo-switch_round {
+    left: 23px;
+}
+
+.nemo-switch_size_32 .nemo-switch_body {
+    width: 56px;
+    height: 32px;
+}
+
+.nemo-switch_size_32 .nemo-switch_round {
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.nemo-switch_size_32 input:checked+.nemo-switch_body .nemo-switch_round {
+    left: 28px;
+}
+
+.nemo-switch input:checked~.nemo-switch_body {
+    background: var(--control-primary);
+}
+
+.nemo-switch_state_disabled {
+    cursor: no-drop;
+}

@@ -1,0 +1,89 @@
+.nemo-chip {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.nemo-chip_variant_primary {
+    background: var(--control-tertiary);
+}
+
+.nemo-chip_variant_secondary {
+    background: var(--control-alternative);
+}
+
+.nemo-icon-chip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.nemo-chip__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    color: var(--text-primary);
+}
+
+.nemo-chip_size_20 {
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.nemo-chip_size_20 .nemo-chip__title {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.nemo-chip_size_28 {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.nemo-chip_size_28 .nemo-chip__title {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.nemo-chip_size_32 {
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.nemo-chip_size_32 .nemo-chip__title {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.nemo-icon-chip__delete {
+    transition: all .4s cubic-bezier(0.4, 0, 1, 1);
+    fill: var(--icons-secondary);
+}
+
+.nemo-chip_size_20 .nemo-icon-chip__delete {
+    width: 16px;
+    height: 16px;
+}
+
+.nemo-chip_size_28 .nemo-icon-chip__delete {
+    width: 16px;
+    height: 16px;
+}
+
+.nemo-chip_size_32 .nemo-icon-chip__delete {
+    width: 24px;
+    height: 24px;
+}
+
+.nemo-chip:hover svg path {
+    fill: var(--icons-primary);
+}
