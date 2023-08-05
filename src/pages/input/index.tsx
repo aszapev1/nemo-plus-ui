@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Box from '../../lib/components/box/box';
 import Input from '../../lib/components/input/input';
 import Text from '../../lib/components/text/text';
+import React from 'react';
 
 const InputPage = () => {
 	const [state, setState] = useState('');

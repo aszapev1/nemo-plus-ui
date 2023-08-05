@@ -1,3 +1,4 @@
+import React from 'react';
 import { colorsData } from '../../data/colorsData';
 import Box from '../../lib/components/box/box';
 import Text from '../../lib/components/text/text';

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Box from '../../lib/components/box/box';
 import Text from '../../lib/components/text/text';
 import Textarea from '../../lib/components/textarea/textarea';
+import React from 'react';
 
 const TextareaPage = () => {
 	const [state, setState] = useState('');

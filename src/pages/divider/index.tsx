@@ -1,3 +1,4 @@
+import React from 'react';
 import Box from '../../lib/components/box/box';
 import Divider from '../../lib/components/divider/divider';
 import Text from '../../lib/components/text/text';

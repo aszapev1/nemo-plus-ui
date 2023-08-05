@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Box from '../../lib/components/box/box';
 import Switch from '../../lib/components/switch/switch';
 import Text from '../../lib/components/text/text';
+import React from 'react';
 
 const SwitchPage = () => {
 	const [state, setState] = useState(false);

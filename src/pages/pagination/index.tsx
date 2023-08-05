@@ -2,6 +2,7 @@ import Box from '../../lib/components/box/box';
 import Text from '../../lib/components/text/text';
 import Pagination from '../../lib/components/pagination/pagination';
 import { useState } from 'react';
+import React from 'react';
 
 const PaginationPage = () => {
 	const [page, setPage] = useState(1);

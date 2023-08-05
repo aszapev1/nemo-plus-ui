@@ -1,3 +1,4 @@
+import React from 'react';
 import Box from '../../lib/components/box/box';
 import Button from '../../lib/components/button/button';
 import Loader from '../../lib/components/loader/loader';

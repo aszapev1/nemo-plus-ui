@@ -1,4 +1,4 @@
-import  img  from '../../assets/default-avatar.jpg';
+import img from '../../assets/default-avatar.jpg';
 import './avatar.css';
 export interface AvatarProps {
 	className?: string;

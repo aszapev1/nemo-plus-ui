@@ -1,3 +1,4 @@
+import React from 'react';
 import Box from '../../lib/components/box/box';
 import Counter from '../../lib/components/counter/counter';
 import Text from '../../lib/components/text/text';

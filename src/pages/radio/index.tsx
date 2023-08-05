@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Box from '../../lib/components/box/box';
 import Radio from '../../lib/components/radio/radio';
 import Text from '../../lib/components/text/text';
+import React from 'react';
 
 const RadioPage = () => {
 	const [state, setState] = useState('radio1');

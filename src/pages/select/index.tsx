@@ -3,6 +3,7 @@ import Box from '../../lib/components/box/box';
 import Select from '../../lib/components/select/select';
 import Text from '../../lib/components/text/text';
 import Popup from '../../lib/components/popup/popup';
+import React from 'react';
 
 const SelectPage = () => {
 	const ref = useRef(null);

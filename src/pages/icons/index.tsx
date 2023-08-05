@@ -1,3 +1,4 @@
+import React from 'react';
 import Box from '../../lib/components/box/box';
 import Icon from '../../lib/components/icon/icon';
 import Text from '../../lib/components/text/text';

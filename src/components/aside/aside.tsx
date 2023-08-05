@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styles from './aside.module.scss';
 import { asideData } from '../../data/asideData';
+import React from 'react';
 const Aside = () => {
 	const handleClick = () => {
 		window.scrollTo(0, 0);

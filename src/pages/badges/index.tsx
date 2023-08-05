@@ -1,3 +1,4 @@
+import React from 'react';
 import Badge from '../../lib/components/badge/badge';
 import Box from '../../lib/components/box/box';
 import Icon from '../../lib/components/icon/icon';
