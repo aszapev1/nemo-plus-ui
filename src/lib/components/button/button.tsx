@@ -2,7 +2,7 @@ import React from 'react';
 import './button.css';
 interface buttonTypes {
 	size: 24 | 32 | 44 | 52 | 72;
-	variant: 'primary';
+	variant: 'primary' | 'secondary';
 	type: 'button' | 'submit';
 	children: React.ReactElement[] | React.ReactElement;
 	className?: string;
@@ -10,6 +10,7 @@ interface buttonTypes {
 	loader?: React.ReactElement;
 	loading?: boolean;
 	onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+	full?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, buttonTypes>(
@@ -23,6 +24,7 @@ const Button = React.forwardRef<HTMLButtonElement, buttonTypes>(
 			disabled,
 			loader,
 			loading,
+			full,
 			onClick,
 		} = props;
 		const styles = [
@@ -35,6 +37,9 @@ const Button = React.forwardRef<HTMLButtonElement, buttonTypes>(
 		}
 		if (loading) {
 			styles.push('nemo-button_loading');
+		}
+		if (full) {
+			styles.push('nemo-button_full');
 		}
 
 		return (

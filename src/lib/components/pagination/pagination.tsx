@@ -40,7 +40,7 @@ const Pagination = (props: PropsPagination) => {
 				<Button
 					type='button'
 					size={size}
-					variant='primary'
+					variant='secondary'
 					onClick={handlePrevious}>
 					<Icon
 						width={size === 32 ? 16 : 24}
@@ -73,7 +73,7 @@ const Pagination = (props: PropsPagination) => {
 				<Button
 					type='button'
 					size={size}
-					variant='primary'
+					variant='secondary'
 					onClick={handleNext}>
 					<Icon
 						width={size === 32 ? 16 : 24}

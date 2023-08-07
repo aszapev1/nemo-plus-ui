@@ -17,6 +17,8 @@ import PaginationPage from './pagination';
 import SwitchPage from './switch';
 import LinkPage from './link';
 import SelectPage from './select';
+import React from 'react';
+import ModalPage from './modal';
 
 const Index = () => {
 	return (
@@ -34,6 +36,7 @@ const Index = () => {
 				<Route path='/input' element={<InputPage />} />
 				<Route path='/link' element={<LinkPage />} />
 				<Route path='/loader' element={<LoaderPage />} />
+				<Route path='/modal' element={<ModalPage />} />
 				<Route path='/pagination' element={<PaginationPage />} />
 				<Route path='/radio' element={<RadioPage />} />
 				<Route path='/select' element={<SelectPage />} />

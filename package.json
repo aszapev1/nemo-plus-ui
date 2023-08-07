@@ -1,8 +1,8 @@
 {
 	"name": "nemo-plus-ui",
-	"version": "2.0.0",
+	"version": "2.2.0",
 	"private": false,
-  "description": "Nemo Plus Components React JS",
+	"description": "Nemo Plus Components React JS",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
 	"files": [
@@ -43,11 +43,12 @@
 		]
 	},
 	"devDependencies": {
-		"@rollup/plugin-terser": "^0.4.3",
 		"@rollup/plugin-commonjs": "^21.0.1",
 		"@rollup/plugin-image": "^3.0.1",
 		"@rollup/plugin-node-resolve": "^13.0.6",
+		"@rollup/plugin-terser": "^0.4.3",
 		"@rollup/plugin-typescript": "^11.1.2",
+		"@rollup/plugin-url": "^8.0.1",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
@@ -55,13 +56,13 @@
 		"@types/node": "^16.18.35",
 		"@types/react": "^18.2.11",
 		"@types/react-dom": "^18.2.4",
-		"sass": "^1.63.6",
-		"typescript": "^4.9.5",
 		"rollup": "^2.60.0",
 		"rollup-plugin-dts": "^4.0.1",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-scss": "^3.0.0",
-		"rollup-plugin-terser": "^7.0.2"
+		"rollup-plugin-terser": "^7.0.2",
+		"sass": "^1.63.6",
+		"typescript": "^4.9.5"
 	},
 	"peerDependencies": {
 		"react": ">=17.0.0",

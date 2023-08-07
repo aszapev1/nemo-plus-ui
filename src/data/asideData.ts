@@ -48,6 +48,10 @@ export const asideData = [
 		link: '/loader',
 	},
 	{
+		name: 'Modal',
+		link: '/modal',
+	},
+	{
 		name: 'Pagination',
 		link: '/pagination',
 	},

@@ -6,6 +6,7 @@ import image from '@rollup/plugin-image';
 import dts from 'rollup-plugin-dts';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { terser } from 'rollup-plugin-terser';
+import url from '@rollup/plugin-url';
 
 const packageJson = require('./package.json');
 
@@ -34,7 +35,6 @@ export default [
 			resolve(),
 			commonjs(),
 			typescript({
-				// tsconfig: './tsconfig.json',
 				exclude: [
 					'src/components',
 					'src/data',

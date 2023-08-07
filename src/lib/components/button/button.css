@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
+.nemo-button_full {
+    width: 100%;
+}
+
 .nemo-button_size_24 {
     height: 24px;
     padding: 4px;
@@ -46,8 +50,17 @@
     color: var(--constants-greyscale-0);
 }
 
+.nemo-button_variant_secondary {
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+}
+
 .nemo-button_variant_primary svg path {
     fill: var(--constants-greyscale-0);
+}
+
+.nemo-button_variant_secondary svg path {
+    fill: var(--icon-primary);
 }
 
 .nemo-button_variant_primary:hover {

@@ -1,0 +1,54 @@
+.nemo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nemo-modal__overlay {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-overlay);
+}
+
+.nemo-modal__container {
+    max-width: 960px;
+    position: relative;
+    z-index: 10000;
+    background-color: var(--background-modal);
+    padding: 32px;
+    border-radius: 32px;
+    max-height: calc(100vh - 128px);
+}
+
+.nemo-modal__title {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+
+.nemo-modal__text {
+    max-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nemo-modal__content {
+    overflow-y: auto;
+    max-height: calc(100vh - 128px - 48px);
+
+}
