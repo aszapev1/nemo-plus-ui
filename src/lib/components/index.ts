@@ -17,3 +17,4 @@ export { default as Select } from './select';
 export { default as Switch } from './switch';
 export { default as Text } from './text';
 export { default as Textarea } from './textarea';
+export { default as Modal } from './modal';

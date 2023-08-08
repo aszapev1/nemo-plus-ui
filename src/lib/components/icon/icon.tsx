@@ -13,7 +13,7 @@ export interface iconTypes {
 export type IconType = keyof typeof IconMap;
 
 const Icon = React.forwardRef<HTMLDivElement, iconTypes>((props, ref) => {
-	const { width, height, variant, className, name } = props;
+	const { width, height, className, name } = props;
 	const css = ['nemo-icon-container'];
 	if (className) {
 		css.push(className);
@@ -27,13 +27,20 @@ const Icon = React.forwardRef<HTMLDivElement, iconTypes>((props, ref) => {
 
 	return (
 		<div className={css.join(' ')} ref={ref}>
-			<Component variant={variant} width={width} height={height} />
+			<svg
+				width={width}
+				height={height}
+				viewBox='0 0 24 24'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'>
+				<Component />
+			</svg>
 		</div>
 	);
 });
 
 Icon.defaultProps = {
-	name: 'CheckCircle'
-}
+	name: 'CheckCircle',
+};
 
 export default Icon;

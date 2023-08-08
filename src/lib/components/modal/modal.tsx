@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
-import './modal.css';
 import Button from '../button/button';
 import Icon from '../icon/icon';
 import Text from '../text/text';
+import './modal.css';
 
 interface modalTypes {
 	className?: string;
@@ -26,7 +26,7 @@ const Modal = (props: modalTypes) => {
 				className='nemo-modal__container'
 				style={{ maxWidth: `${maxWidth}` }}>
 				<div className='nemo-modal__title'>
-					<Text tag='h2' weight='medium' size={20} lineHeight={24} className='nemo-modal__text'>
+					<Text tag='h2' weight='medium' size={24} lineHeight={28} className='nemo-modal__text'>
 						{title}
 					</Text>
 					<Button

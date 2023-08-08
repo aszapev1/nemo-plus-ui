@@ -44,6 +44,42 @@ const IconsPage = () => {
 						variant='outline'
 						name='Close'
 					/>
+					<Icon
+						width={32}
+						height={32}
+						variant='outline'
+						name='Delete'
+					/>
+					<Icon
+						width={32}
+						height={32}
+						variant='outline'
+						name='Search'
+					/>
+					<Icon
+						width={32}
+						height={32}
+						variant='outline'
+						name='Edit'
+					/>
+					<Icon
+						width={32}
+						height={32}
+						variant='outline'
+						name='Menu'
+					/>
+					<Icon
+						width={32}
+						height={32}
+						variant='outline'
+						name='Check'
+					/>
+					<Icon
+						width={32}
+						height={32}
+						variant='outline'
+						name='Plus'
+					/>
 				</Box>
 			</Box>
 		</Box>
