@@ -1,7 +1,6 @@
 import React from 'react';
 import './select.css';
 import Icon from '../icon/icon';
-import Chip from '../chip/chip';
 interface selectTypes {
 	className?: string;
 	size: 32 | 44 | 52 | 72;
@@ -12,7 +11,6 @@ interface selectTypes {
 	full?: boolean;
 	tabIndex?: number;
 	onClick?: () => void;
-	onClickChip?: (id: string | number) => void;
 }
 const Select = React.forwardRef<HTMLDivElement, selectTypes>((props, ref) => {
 	const {
@@ -25,7 +23,6 @@ const Select = React.forwardRef<HTMLDivElement, selectTypes>((props, ref) => {
 		full,
 		tabIndex,
 		onClick,
-		onClickChip,
 	} = props;
 	const css = ['nemo-select', `nemo-select_size_${size}`];
 	if (className) {
@@ -49,13 +46,6 @@ const Select = React.forwardRef<HTMLDivElement, selectTypes>((props, ref) => {
 		}
 	};
 
-	const handleClickChip = (event: React.MouseEvent<HTMLDivElement>, id: number | string) => {
-		event.stopPropagation();
-		if (!disabled && onClickChip) {
-			onClickChip(id);
-		}
-	};
-
 	return (
 		<div
 			className={css.join(' ')}
@@ -66,24 +56,7 @@ const Select = React.forwardRef<HTMLDivElement, selectTypes>((props, ref) => {
 				<div className='nemo-select_option'>
 					{value.length > 0 ? (
 						<span className='nemo-select_text nemo-select_value'>
-							{value.map((option) => (
-								<Chip
-									key={option.id}
-									onClick={(event) => handleClickChip(event, option.id)}
-									size={20}
-									variant='primary'
-									icon={
-										<Icon
-											variant='outline'
-											width={14}
-											height={14}
-											name='Close'
-										/>
-									}>
-									{option.title}
-								</Chip>
-							))}
-							{/* {value.map((option) => option.title).join(', ')} */}
+							{value.map((option) => option.title).join(', ')}
 						</span>
 					) : (
 						<span className='nemo-select_placeholder nemo-select_text'>

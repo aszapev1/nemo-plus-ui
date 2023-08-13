@@ -41,7 +41,7 @@
 }
 
 .nemo-modal__text {
-    max-height: 24px;
+    max-height: 32px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -49,6 +49,6 @@
 
 .nemo-modal__content {
     overflow-y: auto;
-    max-height: calc(100vh - 128px - 48px);
+    max-height: calc(100vh - 128px - 56px);
 
 }
