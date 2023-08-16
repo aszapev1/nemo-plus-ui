@@ -94,6 +94,7 @@ body {
     --background-disabled: rgba(127, 140, 153, 0.35);
     --background-stroke-disabled: rgba(188, 195, 208, 0.25);
     --background-lower: #F2F3F7;
+    --background-hover: rgba(188, 195, 208, 0.25);
     --icon-primary: #000000;
     --icon-secondary: #969FA8;
     --icon-tertiary: #BBC1C7;
@@ -133,6 +134,7 @@ body {
     --background-disabled: rgba(98, 108, 119, 0.15);
     --background-stroke-disabled: rgba(127, 140, 153, 0.10);
     --background-lower: #000000;
+    --background-hover: rgba(242, 243, 247, 0.2);
     --icon-primary: #FFFFFF;
     --icon-secondary: #969FA8;
     --icon-tertiary: #626C77;

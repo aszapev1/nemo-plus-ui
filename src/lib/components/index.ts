@@ -18,3 +18,4 @@ export { default as Switch } from './switch';
 export { default as Text } from './text';
 export { default as Textarea } from './textarea';
 export { default as Modal } from './modal';
+export { default as Tab } from './tab';

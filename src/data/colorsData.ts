@@ -95,6 +95,10 @@ export const colorsData = [
 				name: 'Lower',
 				var: '--background-lower',
 			},
+			{
+				name: 'Hever',
+				var: '--background-hover',
+			},
 		],
 	},
 	{

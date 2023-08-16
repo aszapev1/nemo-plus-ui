@@ -56,6 +56,10 @@ export const asideData = [
 		link: '/pagination',
 	},
 	{
+		name: 'Tab',
+		link: '/tabs',
+	},
+	{
 		name: 'Textarea',
 		link: '/textarea',
 	},

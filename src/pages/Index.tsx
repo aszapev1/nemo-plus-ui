@@ -19,6 +19,7 @@ import LinkPage from './link';
 import SelectPage from './select';
 import React from 'react';
 import ModalPage from './modal';
+import TabPage from './tab';
 
 const Index = () => {
 	return (
@@ -41,6 +42,7 @@ const Index = () => {
 				<Route path='/radio' element={<RadioPage />} />
 				<Route path='/select' element={<SelectPage />} />
 				<Route path='/switch' element={<SwitchPage />} />
+				<Route path='/tabs' element={<TabPage />} />
 				<Route path='/textarea' element={<TextareaPage />} />
 			</Route>
 		</Routes>
