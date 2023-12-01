@@ -20,6 +20,7 @@ import SelectPage from './select';
 import React from 'react';
 import ModalPage from './modal';
 import TabPage from './tab';
+import RatingPage from './rating';
 
 const Index = () => {
 	return (
@@ -40,6 +41,7 @@ const Index = () => {
 				<Route path='/modal' element={<ModalPage />} />
 				<Route path='/pagination' element={<PaginationPage />} />
 				<Route path='/radio' element={<RadioPage />} />
+				<Route path='/rating' element={<RatingPage />} />
 				<Route path='/select' element={<SelectPage />} />
 				<Route path='/switch' element={<SwitchPage />} />
 				<Route path='/tabs' element={<TabPage />} />

@@ -1,0 +1,63 @@
+.nemo-rating {
+    display: flex;
+}
+
+.nemo-rating_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.rating__icon {
+    display: block;
+}
+
+.rating__icon svg path {
+    fill: var(--background-stroke);
+    transition: fill 0.2s ease-in-out;
+}
+
+.rating__star {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.rating__star.hover {
+    cursor: pointer;
+}
+
+.rating__star.hover .rating__icon svg path {
+    fill: var(--brand)
+}
+
+.nemo-rating_title {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.rating__star.hover~.nemo-rating_title {
+    color: var(--brand)
+}
+
+.nemo-rating_results {
+    margin-left: 44px;
+}
+
+.nemo-rating_result {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    color: var(--brand);
+}

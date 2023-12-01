@@ -13,6 +13,7 @@ export { default as Loader } from './loader';
 export { default as Pagination } from './pagination';
 export { default as Popup } from './popup';
 export { default as Radio } from './radio';
+export { default as Rating } from './rating';
 export { default as Select } from './select';
 export { default as Switch } from './switch';
 export { default as Text } from './text';

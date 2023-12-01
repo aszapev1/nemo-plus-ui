@@ -68,6 +68,10 @@ export const asideData = [
 		link: '/radio',
 	},
 	{
+		name: 'Rating',
+		link: '/rating',
+	},
+	{
 		name: 'Select',
 		link: '/select',
 	},

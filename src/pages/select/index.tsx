@@ -96,7 +96,6 @@ const SelectPage = () => {
 					value={value}
 					isOpen={isShow}
 					onClick={() => setIsShow(!isShow)}
-					onClickChip={handleClickChip}
 				/>
 			</Popup>
 		</Box>
