@@ -12,10 +12,10 @@
 	"types": "dist/esm/index.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/aszapev1/nemo-ui.git"
+		"url": "git+https://github.com/aszapev1/nemo-plus-ui"
 	},
 	"bugs": {
-		"url": "https://github.com/aszapev1/nemo-ui/issues"
+		"url": "https://github.com/aszapev1/nemo-plus-ui/issues"
 	},
 	"dependencies": {
 		"react": ">=17.0.0",
