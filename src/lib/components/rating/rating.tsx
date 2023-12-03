@@ -35,7 +35,7 @@ const Rating = (props: RatingTypes) => {
 			{[...Array(numberOfStars)].map((item, index) => {
 				index += 1;
 				return (
-					<div className='nemo-rating_item'>
+					<div className='nemo-rating_item' key={index}>
 						<button
 							type='button'
 							key={index}
